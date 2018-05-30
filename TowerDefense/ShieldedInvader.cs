@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TowerDefense
 {
-    class ShieldedInvader
+    internal class ShieldedInvader
     {
     }
 }
