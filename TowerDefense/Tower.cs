@@ -2,6 +2,7 @@
 
 namespace TowerDefense
 {
+    //Tower interface is implemented in subclasses of Tower, and which inherit the parent access modifiers for properties, methods, and constructors
     internal class Tower
     {
         protected virtual int Range { get; } = 1; //protected memeber names are started with uppercase letters. We make it readonly by only giving it a getter
