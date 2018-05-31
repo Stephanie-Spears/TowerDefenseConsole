@@ -7,7 +7,7 @@ namespace TowerDefense
         private static void Main(string[] args)
         {
             Game.MainGame();
-            //Console.WriteLine("Hello World!");
+            Console.WriteLine("The Game is Over!");
             Console.ReadKey();
         }
     }
