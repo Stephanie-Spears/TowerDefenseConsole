@@ -43,7 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FastInvader.cs" />
+    <Compile Include="LongRangeTower.cs" />
+    <Compile Include="PowerfulTower.cs" />
+    <Compile Include="SniperTower.cs" />
     <Compile Include="StrongInvader.cs" />
+    <Compile Include="SuperTower.cs" />
     <Compile Include="TowerDefenseException.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Invader.cs" />

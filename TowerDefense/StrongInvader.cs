@@ -8,7 +8,7 @@ namespace TowerDefense
 {
     internal class StrongInvader : Invader
     {
-        public override int Health { get; protected set; } = 2;
+        public override int Health { get; protected set; } = 2; //subclass must match the parent interface access level-> must be a public method with a protected setter
 
         public StrongInvader(Path path) : base(path)
         {
