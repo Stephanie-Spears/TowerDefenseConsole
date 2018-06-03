@@ -29,6 +29,11 @@ namespace TowerDefense
             return this.X == that.X && this.Y == that.Y;
         }
 
+        public override int GetHashCode()
+        {
+             return X.GetHashCode() * 31 + Y.GetHashCode();
+        }
+
         public int DistanceTo(int x, int y)
         {
             return (int)Math.Sqrt(Math.Pow(X - x, 2) + Math.Pow(Y - y, 2));
