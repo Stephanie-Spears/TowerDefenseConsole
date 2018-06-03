@@ -1,9 +1,18 @@
 ﻿
 namespace TowerDefense
 {
-    interface IInvader
+
+    interface IMapable
     {
-         MapLocation Location { get; }
+        MapLocation Location { get; }
+    }
+
+    interface IMoveable
+    {
+        void Move();
+    }
+    interface IInvader : IMapable, IMoveable 
+    {
 
         // True if the invader has reached the end of the path
         bool HasScored { get; }
@@ -12,8 +21,6 @@ namespace TowerDefense
         bool IsNeutralized { get; }
 
         bool IsActive {get;}
-
-        void Move();
 
         void DecreaseHealth(int factor);
     }
